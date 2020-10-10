@@ -19,7 +19,7 @@ body {
 }
 /* set font family for all text and stylize it. */
 
-h5, h4, h3, h1, p, ul {
+h5, h4, h3, h2, h1, p, ul {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   
 }
