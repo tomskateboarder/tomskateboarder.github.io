@@ -12,6 +12,8 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <section>
+    <div class="group">
   
     <!-- header with my logo. -->
  
@@ -21,23 +23,26 @@
         <img src="./new-logo.jpg" height="300" class="center" alt="blue"><h1>Tom Evans</h1>
       
     </header>
+  </section>
     <!-- nav section for Intro, About Me and Contact Me. -->
     <hr>
+    <section>
     <nav>
   
       
-      <ol>
-        <li>Where Do I Live? 
-        <li>Who Am I?
-        <li>Contact Me
-      </ol>
+      
+        <a href="#Where Do I Live?">Where Do I Live?</a> 
+        <a href="#Who Am I?">Who Am I?</a>
+        <a href="#Contact Form">Contact Form</a>
+      
       
     </nav>
+  </section>
     <main>
       <section>
         
     <!-- title for Intro section.-->
-        <h5>Where Do I Live?</h5>
+        <h5 id="Where Do I Live?">Where Do I Live?</h5>
     <!-- article section for Intro.-->
         <article>
             <!-- article content, intro explaining who I am and where I'm located.-->
@@ -58,7 +63,7 @@
       </section>
         <!-- About Me. -->
         <section>
-        <h5>Who Am I?</h5>
+        <h5 id="Who Am I?">Who Am I?</h5>
       
         <article> 
         <p>
@@ -74,7 +79,30 @@
       </section>
       <section>
     <!-- title for contact section.-->
-        <h5>Contact Me</h5>
+        
+        
+          <h2 id="Contact Form">Contact Form</h2>
+          <div class="item-double">
+            <form
+            action="https://formspree.io/f/xaylbyvb"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="text" name="_replyto">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+          
+            <!-- your other form fields go here -->
+          
+            <button type="submit">Send</button>
+          </form>
+          </div>
+      </section>
+      
         <!-- links to linkedIn, gitHub and email.-->
         <a href="https://www.linkedin.com/in/tom-evans-1164a677/">My LinkedIn</a><br>
         <a href="https://github.com/tomskateboarder">My GitHub</a>
@@ -82,14 +110,16 @@
       </section>
       <br>
       <br>
-      <hr>
+      
     <footer>
-      <div>
+      <hr>
+      <div class="item">
         <!-- email. -->        
       tom.ward.evans@gmail.com
       </div>
     </footer>
   </main>
     <script src="script.js"></script>
+  </div>
   </body>
 </html>
