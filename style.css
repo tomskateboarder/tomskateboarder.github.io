@@ -15,11 +15,23 @@ section h2 {
 
 }
 /* center logo. */
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.tv-image {
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: auto;
+  display: flex;
+  justify-content: center;
+  
   width: auto;
   height: 250px;
 }
@@ -33,6 +45,7 @@ h5, h4, h3, h2, h1, p, ul {
 img {
   width: 100%;
   display: flex;
+  
 }
 
 ol {
@@ -74,7 +87,14 @@ div {
   text-align: center;
 }
 
-ul li {
+nav ul li a {
+  display: flex;
+  justify-content: center;  
+  align-content: center;
+}
+
+nav ul li {
+  
   list-style: none;
 }
 
@@ -84,6 +104,7 @@ hr {
   /*border: 2px solid grey;
        size style color */
   margin-top: 80px;
+  margin-bottom: 20px;
   
 }
 
@@ -126,11 +147,34 @@ hr {
   margin: 10px;
 }
 
+.contact-links {
+  justify-content: center;
+}
+
 /* Groups and Items (Desktop) */
 
-@media all and  (min-width: 800px) {
+@media all and  (min-width: 600px) {
   section {
       padding: 0 10%;
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  nav ul li a {
+    margin: 0 20px 0 0;
+  }
+
+  nav ul li:last-child a {
+    margin-right: 0;
   }
 
   .group {
